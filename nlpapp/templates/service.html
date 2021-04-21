@@ -1,0 +1,38 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block title %}Services{% endblock%}
+ {% block head %}
+ <div class="row">
+            <p>SERVICES<br/></p>
+</div>
+{% endblock  %}
+{% block content %}
+<section>
+  <div class="container">
+  <div class="row"><br/><br/>
+   <div class="col-sm-6">
+       <img src="{% static 'ai.jpg' %}" height='343px' width='448px'>
+       <h1>AI BOT</h1>
+        <p>Using Open source technology, Dialogflow(GCP), Alexa ( AWS)</p>
+     </div>
+     <div class="col-sm-6">
+       <img src="{% static 'cl.jpg' %}" height='343px' width='448px'>
+       <h1>CLOUD SERVICES</h1>
+       <p>Solutions using AWS, GCP, Azur, Heroku or any other cloud provider.</p>
+     </div>
+     <div class="col-sm-6">
+       <img src="{% static 'wrk.png' %}" height='343px' width='448px'>
+       <h1>WORKFLOW AUTOMATION</h1>
+       <p>Automation using open source technologies and cloud platforms
+       </p>
+     </div>
+      <div class="col-sm-6">
+       <img src="{% static 'min.png' %}" height='343px' width='448px'>
+       <h1>EXTRACTING DATA FROM ANY SOURCE AND GIVING IT MEANING</h1>
+       <p>Extracting tables from PDF, Web scraping on scale</p>
+     </div>
+
+    </div>
+   </div>
+   </section>>
+{% endblock %}

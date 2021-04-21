@@ -1,0 +1,84 @@
+{% load static %}
+<!-- Navigation -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+  
+  {% block title %}
+  {% endblock%}
+  </title>
+
+  <link href="{% static 'logo.png' %}" rel="icon" type="image/icon/">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/sidebarNavigation.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-default sidebarNavigation"  data-sidebarClass="navbar-default">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand" href="#"><img src="{% static 'logo.png' %}" height="30" width="30"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          
+          <li> 
+       
+      <a href="{% url 'home' %}">Home</a></li>
+        
+
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'product' %}">Product</a></li>
+        <li><a href="{% url 'consulting' %}">Consulting</a></li>
+        <li><a href="{% url 'services' %}">Services</a></li>
+        <li><a href="{% url 'training' %}">Trainings</a></li>
+        <li><a href="{% url 'career' %}">Career</a></li>
+        <li><a href="{% url 'internship' %}">Internship</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'pay' %}">Payments</a></li>
+        <li><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-search"></span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Banner -->
+<!-- Main Page -->
+<section class="banner">
+  <div class="container"> 
+    {% block head %}
+
+    {% endblock  %}
+  </div>  
+</section>
+{% block content %}
+{% endblock %}
+
+<!-- Footer -->
+{% include 'foot.html' %}

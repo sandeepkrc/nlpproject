@@ -1,0 +1,26 @@
+{% extends 'base2.html' %}
+{% block title %}Contact{% endblock%}
+ {% block head %}
+ <div class="row">
+            <p>CONTACT</p>
+</div>
+{% endblock  %}
+{% block content %}
+ <section>
+      <div class="container">
+          <div class="row"><br/><br/>
+             <form action='/nlp/thank' method="post">
+                     {% csrf_token %} 
+              
+                 <table>
+                  {{form}}
+
+                 </table>
+                 <input type="submit">
+               
+              </form>
+          </div><br/><br/>
+      </div>
+   </section>
+
+{% endblock %}<

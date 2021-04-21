@@ -1,0 +1,27 @@
+
+{% extends 'base2.html' %}
+{% load static %}
+{% block title %}Product{% endblock%}
+ {% block head %}
+ <div class="row">
+            <p>PRODUCT</p>
+</div>
+{% endblock  %}
+{% block content %}
+<section>
+  <div class="container">
+   <div class="row"><br/><br/>
+     <div class="col-sm-6">
+       <img src="{% static 'chatbot.jpg' %}" height='343px' width='448px'>
+     </div>
+     <div class="col-sm-6">
+         <h1>INTERVIEW BOT</h1>
+   
+          <p>Takes interview on any topic. Evaluates the interview performance. Can analyse <br><br><br>the interview performance and provide the feedback on areas to improve. </p>
+     </div><br/><br/>
+  </div>    
+</div>
+</section>
+<br>
+<br>
+{% endblock %}

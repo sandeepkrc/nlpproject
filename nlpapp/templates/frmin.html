@@ -1,0 +1,27 @@
+{% extends 'base2.html' %}
+{% block title %}{% endblock %}
+{% block head %}
+ <div class="row">
+            <p>FORM</p>
+</div>
+{% endblock  %}
+{% block content %}
+<section>
+  <div class="container">
+  <div class="row"><br/><br/>
+    <form method="post" action="/nlp/ithank">
+
+          {% csrf_token %}
+
+
+	<table>
+	{{iform }}
+	</table>
+<input type="submit" value="submit">
+</form>
+
+</div>
+</section>
+<br/>
+</br>
+{% endblock %}
