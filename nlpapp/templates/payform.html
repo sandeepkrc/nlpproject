@@ -1,27 +1,29 @@
 {% extends 'base2.html' %}
+{% load static %}
 {% block title  %}
 payments
 {% endblock  %}
 {% block head %} 
 <div class="row">
-            <p>PATMENTS</p>
+            <p>PAYMENTS</p>
 </div>
 
 {% endblock%}
 {% block content %}
-
-
 <section>
-      <div class="container">
-          <div class="row">
-        
-   
-   form will shoe here
- 
-           </div>
+	<div class="container">
+  
+    <img src="{% static 'm5.jpg' %}" height="500px" width="100%">
+  <div class="centered" style="position: absolute;
+  top: 50%;
+  left: 50%;
+  color: red;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}">THIS PAGE IS UNDER MAINTENANCE...</div>
+  </div>
 
-      </div>
-   </section>
+ </section>
  
   
 {% endblock  %}
